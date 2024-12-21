@@ -17,6 +17,11 @@ const menuCategories = [
         price: 35, 
         description: 'Rich chocolate layers with ganache',
         image: '/cakes/chocolate-cake.jpg',
+        images: [
+          '/cakes/chocolate-cake-2.jpg',
+          '/cakes/chocolate-cake-3.jpg',
+          '/cakes/chocolate-cake-4.jpg',
+        ],
         category: 'Cakes',
         details: {
           weight: '1.2 kg',

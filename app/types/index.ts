@@ -23,6 +23,7 @@ export interface Product {
   price: number;
   description: string;
   image: string;
+  images: string[]; // Array of additional product images
   category: string;
   details: ProductDetails;
   customization?: {
