@@ -5,6 +5,7 @@ import { useCheckout } from '../context/CheckoutContext';
 import AddressForm from '../components/AddressForm';
 import { useRouter } from 'next/navigation';
 import { FaCheck } from 'react-icons/fa';
+import { Address } from '../types';
 
 const deliveryTimes = [
   '9:00 AM - 11:00 AM',

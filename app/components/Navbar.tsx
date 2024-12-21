@@ -13,7 +13,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-rose-600">Brows Pinch</span>
+            <Image src="/logo/brown_pinch_logo.png" alt="Logo" width={80} height={80} /> {/* {{ edit_1 }} */}
+            {/* <span className="text-2xl font-bold text-rose-600">Brows Pinch</span> */}
           </Link>
 
           {/* Desktop Menu */}

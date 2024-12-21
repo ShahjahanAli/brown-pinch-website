@@ -2,6 +2,7 @@
 import { Product } from '../types';
 import { IoMdClose } from 'react-icons/io';
 import Image from 'next/image';
+import ImageGallery from './ImageGallery';
 
 interface ProductDetailsModalProps {
   product: Product;
@@ -12,6 +13,9 @@ interface ProductDetailsModalProps {
 export default function ProductDetailsModal({ product, isOpen, onClose }: ProductDetailsModalProps) {
   if (!isOpen) return null;
 
+  // Combine main image with additional images
+  const allImages = [product.image, ...(product.images || [])];
+
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto">
       <div className="fixed inset-0 bg-black bg-opacity-50" onClick={onClose} />
@@ -20,20 +24,15 @@ export default function ProductDetailsModal({ product, isOpen, onClose }: Produc
         <div className="relative bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
           <button 
             onClick={onClose}
-            className="absolute right-4 top-4 text-gray-500 hover:text-gray-700"
+            className="absolute right-4 top-4 text-gray-500 hover:text-gray-700 z-10"
           >
             <IoMdClose size={24} />
           </button>
 
           <div className="grid md:grid-cols-2 gap-6 p-6">
-            {/* Product Image */}
-            <div className="relative h-72 md:h-full rounded-lg overflow-hidden">
-              <Image
-                src={product.image}
-                alt={product.name}
-                fill
-                className="object-cover"
-              />
+            {/* Replace the Image component with ImageGallery */}
+            <div className="relative">
+              <ImageGallery images={allImages} productName={product.name} />
             </div>
 
             {/* Product Details */}
