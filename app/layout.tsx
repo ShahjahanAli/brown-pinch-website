@@ -25,11 +25,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <CheckoutProvider>
           <CartProvider>
-            <ProgressBar />
-            <Navbar />
             <Suspense fallback={<div>Loading...</div>}>
-              {children}
+              <ProgressBar />
             </Suspense>
+            <Navbar />
+            {children}
             <Footer />
           </CartProvider>
         </CheckoutProvider>
