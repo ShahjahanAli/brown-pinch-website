@@ -9,16 +9,16 @@ import ProductDetailsModal from './ProductDetailsModal';
 const products = [
     {
         id: 1,
-        name: 'Classic Chocolate Cake',
+        name: 'Bite Size Brownie',
         price: 35,
         description: 'Rich chocolate layers with ganache',
-        image: '/cakes/chocolate-cake.jpg',
+        image: '/items/brownies/Brownies_b1_1.jpeg',
         images: [
-            '/cakes/chocolate-cake-2.jpg',
-            '/cakes/chocolate-cake-3.jpg',
-            '/cakes/chocolate-cake-4.jpg',
+            '/items/brownies/Brownies_b1_1.jpeg',
+            '/items/brownies/Brownies_b1_2.jpeg',
+            '/items/brownies/Brownies_b1_3.jpeg',
         ],
-        category: 'Cakes',
+        category: 'Brownie',
         details: {
             weight: '1.2 kg',
             size: '8 inches',
@@ -51,11 +51,16 @@ const products = [
     },
     {
         id: 2,
-        name: 'Vanilla Bean Cake',
+        name: 'Cup Cake',
         price: 32,
         description: 'Light and fluffy with vanilla buttercream',
-        image: '/cakes/vanilla-cake.jpg',
-        category: 'Cakes',
+        image: '/items/pastries/Cup_Cake_b1_1.jpeg',
+        category: 'Pastries',
+        images: [
+            '/items/pastries/Cup_Cake_b1_1.jpeg',
+            '/items/pastries/Cup_Cake_b1_2.jpeg',
+            '/items/pastries/Cup_Cake_b1_3.jpeg',
+        ],
         details: {
             weight: '1.2 kg',
             size: '8 inches',
@@ -92,8 +97,13 @@ const products = [
         name: 'Red Velvet',
         price: 38,
         description: 'Traditional red velvet with cream cheese frosting',
-        image: '/cakes/red-velvet.jpg',
+        image: '/items/cakes/Cake_Red_Velvet_b1_1.jpeg',
         category: 'Cakes',
+        images: [
+            '/items/cakes/Cake_Red_Velvet_b1_1.jpeg',
+            '/items/cakes/Cake_Red_Velvet_b1_2.jpeg',
+            '/items/cakes/Cake_Red_Velvet_b1_3.jpeg',
+        ],
         details: {
             weight: '1.2 kg',
             size: '8 inches',
